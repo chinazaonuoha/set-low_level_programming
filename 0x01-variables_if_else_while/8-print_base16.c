@@ -12,9 +12,9 @@ int main(void)
 int number_base_16 = 0;
 while (number_base_16 < 16)
 {
-putchar(number_base_16 + '0');
+putchar(number_base_16 + '0' + (number_base_16 > 9) * 39);
 number_base_16++;
 }
-putchar('\n'); 
+putchar('\n');
 return (0);
 }
