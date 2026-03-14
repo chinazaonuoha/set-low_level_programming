@@ -15,6 +15,6 @@ while (number_base_10 < 10)
 putchar(number_base_10 + '0');
 number_base_10++;
 }
-putchar('\n'); 
+putchar('\n');
 return (0);
 }

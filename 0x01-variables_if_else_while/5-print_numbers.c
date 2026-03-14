@@ -15,6 +15,6 @@ while (number_base_10 < 10)
 printf("%d", number_base_10);
 number_base_10++;
 }
-putchar('\n'); 
+putchar('\n');
 return (0);
 }
