@@ -35,4 +35,12 @@ int _islower(int c);
  * Return: 1 if c is an alphabetic character, 0 otherwise
  */
 int _isalpha(int c);
+
+/**
+ * print_sign - prints the sign of a number
+ * @n: the number to check
+ *
+ * Return: 1 if n is greater than 0, 0 if n is 0, -1 if n is less than 0
+ */
+int print_sign(int n);
 #endif
