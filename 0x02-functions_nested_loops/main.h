@@ -78,4 +78,10 @@ void times_table(void);
  * Return: the sum of a and b
  */
 int add(int, int);
+
+/**
+ * print_to_98 - prints all natural numbers from n to 98
+ * @n: the starting number
+ */
+void print_to_98(int n);
 #endif
