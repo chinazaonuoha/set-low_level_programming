@@ -86,4 +86,14 @@ int add(int, int);
 void print_to_98(int n);
 
 void positive_or_negative(int i);
+
+/**
+ * largest_number - returns the largest of 3 integers
+ * @a: the first integer
+ * @b: the second integer
+ * @c: the third integer
+ *
+ * Return: the largest of a, b, and c
+ */
+int largest_number(int a, int b, int c);
 #endif
