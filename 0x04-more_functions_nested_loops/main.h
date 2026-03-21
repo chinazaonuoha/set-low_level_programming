@@ -43,4 +43,10 @@ void print_most_numbers(void);
  * more_numbers - prints 10 times the numbers from 0 to 14
  */
 void more_numbers(void);
+
+/**
+ * print_line - prints a line of length n
+ * @n: The length of the line to print
+ */
+void print_line(int n);
 #endif
