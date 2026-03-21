@@ -61,4 +61,12 @@ void print_diagonal(int n);
  * @size: The size of the square to print
  */
 void print_square(int size);
+
+/**
+ * print_triangle - prints a triangle of size size
+ * @size: The size of the triangle to print
+ */
+void print_triangle(int size);
+
+
 #endif
