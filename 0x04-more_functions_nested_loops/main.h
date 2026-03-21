@@ -20,4 +20,12 @@ int _isupper(int c);
  * Return: 1 if digit, 0 otherwise
  */
 int _isdigit(int c);
+
+/**
+ * mul - multiplies two integers
+ * @a: The first integer
+ * @b: The second integer
+ * Return: The product of a and b
+ */
+int mul(int a, int b);
 #endif
