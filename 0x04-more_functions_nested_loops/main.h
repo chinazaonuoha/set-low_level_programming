@@ -55,4 +55,10 @@ void print_line(int n);
  * @n: The length of the diagonal to print
  */
 void print_diagonal(int n);
+
+/**
+ * print_square - prints a square of size size
+ * @size: The size of the square to print
+ */
+void print_square(int size);
 #endif
