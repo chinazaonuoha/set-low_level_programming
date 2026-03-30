@@ -33,4 +33,11 @@ void _puts(char *str);
  * @s: pointer to the string to be printed in reverse
  */
 void print_rev(char *s);
+
+/**
+ * rev_string - reverses a string
+ * @s: pointer to the string to be reversed
+ */
+void rev_string(char *s);
+
 #endif /* MAIN_H */
