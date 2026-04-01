@@ -1,6 +1,14 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+
+/* _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c);
 /**
  * reset_to_98 - resets the value of an integer to 98
  * @n: pointer to the integer to be reset
@@ -39,5 +47,11 @@ void print_rev(char *s);
  * @s: pointer to the string to be reversed
  */
 void rev_string(char *s);
+
+/**
+ * puts2 - prints every other character of a string followed by a new line
+ * @str: pointer to the string to be printed
+ */
+void puts2(char *str);
 
 #endif /* MAIN_H */
