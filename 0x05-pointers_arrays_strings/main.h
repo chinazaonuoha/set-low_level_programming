@@ -54,4 +54,10 @@ void rev_string(char *s);
  */
 void puts2(char *str);
 
+/**
+ * puts_half - prints half of a string followed by a new line
+ * @str: pointer to the string to be printed
+ */
+void puts_half(char *str);
+
 #endif /* MAIN_H */
