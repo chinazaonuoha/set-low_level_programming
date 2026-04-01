@@ -60,4 +60,11 @@ void puts2(char *str);
  */
 void puts_half(char *str);
 
+/**
+ * print_array - prints n elements of an array of integers followed by a new line
+ * @a: pointer to the first element of the array
+ * @n: number of elements to be printed
+ */
+void print_array(int *a, int n);
+
 #endif /* MAIN_H */
