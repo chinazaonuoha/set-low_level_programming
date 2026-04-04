@@ -8,25 +8,21 @@
  */
 char *leet(char *str)
 {
-int i = 0;
-while (str[i] != '\0')
+int i, j;
+char letters[] = "aAeEoOtTlL";
+char codes[]   = "4433007711";
+
+for (i = 0; str[i] != '\0'; i++)
 {
-if (str[i] == 'a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E'
-|| str[i] == 'o' || str[i] == 'O'
-|| str[i] == 't' || str[i] == 'T' || str[i] == 'l' || str[i] == 'L')
+for (j = 0; letters[j] != '\0'; j++)
 {
-if (str[i] == 'a' || str[i] == 'A')
-str[i] = '4';
-else if (str[i] == 'e' || str[i] == 'E')
-str[i] = '3';
-else if (str[i] == 'o' || str[i] == 'O')
-str[i] = '0';
-else if (str[i] == 't' || str[i] == 'T')
-str[i] = '7';
-else if (str[i] == 'l' || str[i] == 'L')
-str[i] = '1';
+if (str[i] == letters[j])   // ✅ ONLY ONE if
+{
+str[i] = codes[j];
+break;  // stop once matched
 }
-i++;
 }
-return (str);
+}
+
+return str;
 }
