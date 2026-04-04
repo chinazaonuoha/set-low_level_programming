@@ -117,10 +117,12 @@ char *_strcpy(char *dest, char *src);
  */
    void reverse_array(int *a, int n);
 
-   /* * string_toupper - changes all lowercase letters of a string to uppercase
+   /**
+    * string_toupper - changes all lowercase letters of a string to uppercase
  * @str: pointer to the string to be modified
  * Return: pointer to the modified string
- */    
-char *string_toupper(char *str);
+ */ 
+
+   char *string_toupper(char *);
 
 #endif /* MAIN_H */
