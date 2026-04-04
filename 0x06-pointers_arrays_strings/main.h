@@ -132,4 +132,11 @@ char *_strcpy(char *dest, char *src);
  */
    char *cap_string(char *);
 
+   /**
+    * leet - encodes a string into 1337
+ * @str: pointer to the string to be encoded
+ * Return: pointer to the encoded string
+ */
+   char *leet(char *);
+
 #endif /* MAIN_H */
