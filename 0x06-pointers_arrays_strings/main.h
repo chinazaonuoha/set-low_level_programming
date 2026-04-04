@@ -125,4 +125,11 @@ char *_strcpy(char *dest, char *src);
 
    char *string_toupper(char *);
 
+   /**
+    * cap_string - capitalizes all words of a string
+ * @str: pointer to the string to be modified
+ * Return: pointer to the modified string
+ */
+   char *cap_string(char *);
+
 #endif /* MAIN_H */
