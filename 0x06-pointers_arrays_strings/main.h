@@ -86,8 +86,21 @@ char *_strcpy(char *dest, char *src);
  char *_strcat(char *dest, char *src);
 
  /**
-  * _strncat
+  * _strncat - concatenates two strings with a limit on the number of characters
+ * @dest: pointer to the destination buffer
+ * @src: pointer to the source string
+ * @n: maximum number of characters to be concatenated from src
+ * Return: pointer to the destination buffer
  */
  char *_strncat(char *dest, char *src, int n);
+
+ /**
+  * _strncpy - copies a string from source to destination with a limit on the number of characters
+ * @dest: pointer to the destination buffer
+ * @src: pointer to the source string
+ * @n: maximum number of characters to be copied from src
+ * Return: pointer to the destination buffer
+ */
+  char *_strncpy(char *dest, char *src, int n);
 
 #endif /* MAIN_H */
