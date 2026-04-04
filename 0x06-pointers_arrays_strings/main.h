@@ -111,4 +111,10 @@ char *_strcpy(char *dest, char *src);
  */
   int _strcmp(char *s1, char *s2);
 
+  /** * reverse_array - reverses the content of an array of integers
+ * @a: pointer to the first element of the array
+ * @n: number of elements in the array
+ */
+   void reverse_array(int *a, int n);
+
 #endif /* MAIN_H */
