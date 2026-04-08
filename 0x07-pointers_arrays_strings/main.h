@@ -70,4 +70,10 @@ unsigned int _strspn(char *s, char *accept);
  * @a: pointer to a 2D array representing the chessboard
  */
  void print_chessboard(char (*a)[8]);
+
+/** print_diagsums - prints the sum of the two diagonals of a square matrix of integers
+ * @a: pointer to the first element of the matrix
+ * @size: the size of the matrix
+ */
+ void print_diagsums(int *a, int size);
 #endif /* MAIN_H */ 
