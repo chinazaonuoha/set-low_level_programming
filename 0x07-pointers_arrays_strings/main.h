@@ -28,4 +28,14 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  * or NULL if the character is not found
  */
 char *_strchr(char *s, char c);
+
+/**
+ * _strspn - gets the length of a prefix substring
+ * @s: pointer to the string to be searched
+ * @accept: pointer to the string containing the characters to be accepted
+ *
+ * Return: the number of characters in the
+ * initial segment of s which are also in accept
+ */
+unsigned int _strspn(char *s, char *accept);
 #endif /* MAIN_H */ 
