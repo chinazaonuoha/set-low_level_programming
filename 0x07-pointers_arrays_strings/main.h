@@ -2,6 +2,14 @@
 #define MAIN_H
 
 /**
+ * _putchar - writes a character to stdout
+ * @c: the character to be printed
+ *
+ * Return: On success, the character printed is returned. On error, EOF is returned.
+ */
+int _putchar(char c);
+
+/**
  * memset - fills memory with a constant byte
  * @s: pointer to the memory area to be filled
  * @b: the constant byte to fill the memory with
@@ -57,4 +65,9 @@ unsigned int _strspn(char *s, char *accept);
  * substring is not found
  */ 
  char *_strstr(char *haystack, char *needle);
+
+ /** print_chessboard - prints the chessboard
+ * @a: pointer to a 2D array representing the chessboard
+ */
+ void print_chessboard(char (*a)[8]);
 #endif /* MAIN_H */ 
