@@ -88,4 +88,6 @@ unsigned int _strspn(char *s, char *accept);
  * @s: pointer to the string to be printed
  */ void _print_rev_recursion(char *s);
 
+ int _strlen_recursion(char *s);
+
 #endif /* MAIN_H */ 
