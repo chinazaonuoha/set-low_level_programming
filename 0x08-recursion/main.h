@@ -83,4 +83,9 @@ unsigned int _strspn(char *s, char *accept);
  * @s: pointer to the string to be printed
  */
  void _puts_recursion(char *s);
+
+/** _print_rev_recursion - prints a string in reverse followed by a new line
+ * @s: pointer to the string to be printed
+ */ void _print_rev_recursion(char *s);
+
 #endif /* MAIN_H */ 
