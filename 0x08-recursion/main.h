@@ -90,4 +90,10 @@ unsigned int _strspn(char *s, char *accept);
 
  int _strlen_recursion(char *s);
 
+/** factorial - returns the factorial of a given number
+ * @n: the number to calculate the factorial of
+ * Return: the factorial of n, or -1 if n is less than 0
+ */
+ int _pow_recursion(int x, int y);
+
 #endif /* MAIN_H */ 
