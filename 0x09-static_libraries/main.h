@@ -4,7 +4,9 @@
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
- * Return: On success 1. On error, -1 is returned, and errno is set appropriately.
+ * Return: On success 1. On error, -1
+ * is returned,
+ * and errno is set appropriately.
  */
 int _putchar(char c);
 
@@ -120,28 +122,32 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  * _strchr - locates a character in a string
  * @s: The string to search
  * @c: The character to locate
- * Return: A pointer to the first occurrence of c in s, or NULL if c is not found
+ * Return: A pointer to the first occurrence of c
+ * in s, or NULL if c is not found
  */
 char *_strchr(char *s, char c);
 /**
  * _strspn - gets the length of a prefix substring
  * @s: The string to search
  * @accept: The set of characters to accept
- * Return: The number of bytes in the initial segment of s which consist only of bytes from accept
+ * Return: The number of bytes in the initial
+ * segment of s which consist only of bytes from accept
  */
 unsigned int _strspn(char *s, char *accept);
 /**
  * _strpbrk - searches a string for any of a set of characters
  * @s: The string to search
  * @accept: The set of characters to search for
- * Return: A pointer to the first occurrence of any character from accept in s, or NULL if no such character is found
+ * Return: A pointer to the first occurrence of
+ * any character from accept in s, or NULL if no such character is found
  */
 char *_strpbrk(char *s, char *accept);
 /**
  * _strstr - locates a substring in a string
  * @haystack: The string to search in
  * @needle: The substring to search for
- * Return: A pointer to the first occurrence of needle in haystack, or NULL if needle is not found
+ * Return: A pointer to the first occurrence of
+ * needle in haystack, or NULL if needle is not found
  */
 char *_strstr(char *haystack, char *needle);
 
