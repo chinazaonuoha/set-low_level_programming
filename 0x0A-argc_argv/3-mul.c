@@ -14,7 +14,7 @@ int num1, num2, result;
 
 if (argc != 3)
 {
-fprintf(stderr, "Error\n");
+printf("Error\n");
 return (1);
 }
 
