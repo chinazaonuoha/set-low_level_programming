@@ -14,7 +14,7 @@ int num1, num2, result;
 
 if (argc != 3)
 {
-fprintf(stderr, "Error: Please provide exactly two numbers\n");
+fprintf(stderr, "Error\n");
 return (1);
 }
 
