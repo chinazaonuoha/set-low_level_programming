@@ -3,10 +3,8 @@
 #include <ctype.h>
 
 /**
- * is_number - checks if a string contains only digits
- * @str: input string
- * Return: 1 if valid number, 0 otherwise
- */
+* is_number - checks if a string contains only digits
+*/
 int is_number(char *str)
 {
 int i = 0;
@@ -23,20 +21,14 @@ i++;
 return (1);
 }
 
-/**
- * main - adds all numbers passed as arguments
- * @argc: argument count
- * @argv: argument vector
- * Return: Always 0 (Success)
- */
 int main(int argc, char *argv[])
 {
 int i, sum = 0;
 
-if (argc < 2)
+if (argc == 1)
 {
-printf("Error\n");
-return (1);
+printf("0\n");
+return (0);
 }
 
 for (i = 1; i < argc; i++)
@@ -53,4 +45,3 @@ sum += atoi(argv[i]);
 printf("%d\n", sum);
 return (0);
 }
-
