@@ -4,6 +4,8 @@
 
 /**
 * is_number - checks if a string contains only digits
+* @str: the string to check
+* Return: 1 if the string is a number, 0 otherwise
 */
 int is_number(char *str)
 {
@@ -21,6 +23,13 @@ i++;
 return (1);
 }
 
+
+/**
+ * main - adds positive numbers
+ * @argc: the number of arguments passed to the program
+ * @argv: an array of strings containing the arguments
+ * Return: 0 if successful, 1 if an error occurs
+ */
 int main(int argc, char *argv[])
 {
 int i, sum = 0;
