@@ -32,4 +32,12 @@ char *str_concat(char *s1, char *s2);
  * Return: A pointer to the allocated grid, or NULL on failure
  */
 int **alloc_grid(int width, int height);
+
+/**
+ * free_grid - Frees a 2D array of integers (grid) previously allocated by alloc_grid
+ * @grid: The pointer to the grid to free
+ * @height: The height of the grid (number of rows)
+ * Return: Nothing.
+ */
+void free_grid(int **grid, int height);
 #endif /* MAIN_H */
