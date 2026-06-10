@@ -9,4 +9,11 @@
  */
 char *create_array(unsigned int size, char c);
 
+
+/**
+ * _strdup - Duplicates a string by allocating memory and copying the content
+ * @str: The string to duplicate
+ * Return: A pointer to the duplicated string, or NULL on failure
+ */
+char *_strdup(char *str);
 #endif /* MAIN_H */
