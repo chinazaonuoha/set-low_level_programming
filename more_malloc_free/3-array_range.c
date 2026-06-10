@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * array_range - Creates an array of integers containing all values from min to max (inclusive)
+ * array_range - Creates an array of integers containing all
+ * values from min to max (inclusive)
  * @min: The minimum value (inclusive)
  * @max: The maximum value (inclusive)
  * Return: A pointer to the created array, or NULL on failure
@@ -16,7 +17,7 @@ if (min > max)
 return (NULL);
 
 size = max - min + 1;
-arr = malloc(size * sizeof(int));
+arr = malloc(size *sizeof(int));
 if (arr == NULL)
 return (NULL);
 
@@ -26,3 +27,4 @@ arr[i] = min + i;
 }
 return (arr);
 }
+
