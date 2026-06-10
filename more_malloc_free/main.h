@@ -47,4 +47,13 @@ void free_grid(int **grid, int height);
  * Return: A pointer to the allocated memory, or exits with status 98 on failure
  */
 void *malloc_checked(unsigned int b);
+
+/**
+ * string_nconcat - Concatenates two strings, but only up to n bytes of the second string
+ * @s1: The first string to concatenate
+ * @s2: The second string to concatenate (up to n bytes)
+ * @n: The maximum number of bytes to concatenate from s2
+ * Return: A pointer to the concatenated string, or NULL on failure
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n);
 #endif /* MAIN_H */
