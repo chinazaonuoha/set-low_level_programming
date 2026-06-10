@@ -10,17 +10,30 @@
 char *_strdup(char *str)
 {
 char *dup;
-int len;
+char *p;
+int len = 0;
 
 if (str == NULL)
 return (NULL);
 
-len = strlen(str);
-dup = malloc((len + 1) * sizeof(char));
+while (str[len])
+len++;
 
-if (dup == NULL)
+dup = malloc(len + 1);
+
+if (!dup)
 return (NULL);
 
-strcpy(dup, str);
+p = dup;
+
+while (*str)
+{
+*p = *str;
+p++;
+str++;
+}
+
+*p = '\0';
+
 return (dup);
 }
