@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_list - Prints all the elements of a list_t list
- * @h: Pointer to the head of the list
+ * print_list - Prints all elements of a list_t list
+ * @h: pointer to head node
  *
- * Return: The number of nodes
+ * Return: number of nodes
  */
 size_t print_list(const list_t *h)
 {
@@ -22,5 +22,5 @@ count++;
 h = h->next;
 }
 
-return (count);
+return count;
 }
