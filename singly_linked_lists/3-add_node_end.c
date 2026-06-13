@@ -1,7 +1,10 @@
 #include "lists.h"
 #include <stdlib.h>
 #include <string.h>
-/** * add_node_end - adds a new node at the end of a linked list
+
+
+/**
+ * add_node_end - adds a new node at the end of a linked list
  * @head: double pointer to the head of the list
  * @n: string to be added
  * Return: pointer to the new node, or NULL on failure
@@ -32,3 +35,4 @@ current = current->next;
 current->next = new_node;
 return (new_node);
 }
+
