@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 /**
  * add_node_end - adds a new node at the end of a linked list
  * @head: double pointer to the head of the list
- * @n: string to be added
+ * @n: string to be added to the new node
  * Return: pointer to the new node, or NULL on failure
  */
 
@@ -14,25 +13,42 @@ list_t *add_node_end(list_t **head, const char *n)
 {
 list_t *new_node;
 list_t *current;
+unsigned int length = 0;
 
+if (head == NULL)
+return (NULL);
+if (n != NULL)
+{
+while (n[length] != '\0')
+length++;
+}
 new_node = malloc(sizeof(list_t));
 if (new_node == NULL)
 return (NULL);
-
+if (n != NULL)
+{
 new_node->str = strdup(n);
+if (new_node->str == NULL)
+{
+free(new_node);
+return (NULL);
+}
+}
+else
+{
+new_node->str = NULL;
+}
+new_node->len = length;
 new_node->next = NULL;
-
 if (*head == NULL)
 {
 *head = new_node;
 return (new_node);
 }
-
 current = *head;
 while (current->next != NULL)
 current = current->next;
-
 current->next = new_node;
+
 return (new_node);
 }
-
