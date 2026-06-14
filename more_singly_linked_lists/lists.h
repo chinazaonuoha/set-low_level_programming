@@ -1,6 +1,7 @@
 #ifndef LISTS_H
 #define LISTS_H
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * struct listint_s - singly linked list
@@ -52,6 +53,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n);
  */
 void free_listint(listint_t *head);
 
+
+
 /**
  * pop_listint - deletes the head node of a listint_t linked list, and returns
  * the head node’s data (n).
@@ -59,7 +62,11 @@ void free_listint(listint_t *head);
  *
  * Return: the head node’s data (n). If the linked list is empty return 0.
  */
+
+
 int pop_listint(listint_t **head);
+
+
 
 /**
  * get_nodeint_at_index - returns the nth node of a listint_t linked list.
@@ -99,5 +106,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
  * Return: 1 if it succeeded, -1 if it failed.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
+
+/**
+ * free_listint2 - frees a listint_t list and sets the head to NULL.
+ * @head: pointer to a pointer to the head of the listint_t list.
+ */
+void free_listint2(listint_t **head);
 
 #endif /* LISTS_H */
