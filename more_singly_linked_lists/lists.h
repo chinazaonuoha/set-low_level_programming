@@ -5,8 +5,8 @@
 
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+int n;
+struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
@@ -63,7 +63,8 @@ int pop_listint(listint_t **head);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 
 /**
- * sum_listint - returns the sum of all the data (n) of a listint_t linked list.
+ * sum_listint - returns the sum of all the data (n) of a
+ * listint_t linked list.
  * @head: pointer to the head of the listint_t list.
  *
  * Return: the sum of all the data (n) of a listint_t linked list. If the
@@ -74,7 +75,8 @@ int sum_listint(listint_t *head);
 /**
  * insert_nodeint_at_index - inserts a new node at a given position.
  * @head: pointer to a pointer to the head of the listint_t list.
- * @idx: index of the list where the new node should be added. Index starts at 0.
+ * @idx: index of the list where the new node
+ * should be added. Index starts at 0.
  * @n: integer to be added to the new node.
  *
  * Return: pointer to the new node, or NULL if it failed.
