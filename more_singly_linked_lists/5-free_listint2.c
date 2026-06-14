@@ -22,3 +22,4 @@ current = next;
 }
 *head = NULL;
 }
+
