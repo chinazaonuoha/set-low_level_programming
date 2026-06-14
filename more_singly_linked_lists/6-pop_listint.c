@@ -14,7 +14,7 @@ listint_t *temp;
 int n;
 
 if (!head || !*head)
-return (-1);
+return (0);
 
 temp = *head;
 *head = (*head)->next;
