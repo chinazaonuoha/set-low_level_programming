@@ -64,4 +64,12 @@ void free_dlistint(dlistint_t *head);
  * Return: Pointer to the nth node, or NULL if it doesn't exist
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
+
+/**
+ * sum_dlistint - Calculates the sum of all the data (n) in a doubly linked list
+ * @head: Pointer to the head of the list
+ *
+ * Return: The sum of all the data in the list
+ */
+int sum_dlistint(dlistint_t *head);
 #endif /* LISTS_H */
