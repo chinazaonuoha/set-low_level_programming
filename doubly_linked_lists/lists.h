@@ -55,4 +55,13 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
  * @head: Pointer to the head of the list
  */
 void free_dlistint(dlistint_t *head);
+
+/**
+ * get_dnodeint_at_index - Returns the nth node of a doubly linked list
+ * @head: Pointer to the head of the list
+ * @index: Index of the node to retrieve (starting from 0)
+ *
+ * Return: Pointer to the nth node, or NULL if it doesn't exist
+ */
+dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 #endif /* LISTS_H */
