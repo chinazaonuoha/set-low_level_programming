@@ -72,4 +72,13 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
  * Return: The sum of all the data in the list
  */
 int sum_dlistint(dlistint_t *head);
+
+/**
+ * insert_dnodeint_at_index - Inserts a new node at a given position in a doubly linked list
+ * @h: Double pointer to the head of the list
+ * @idx: Is the index of the list where the new node should be added
+ * @n: Integer data for the new node
+ * Return: Pointer to the new node, or NULL if it failed or if it is not possible to add the new node at index idx
+ */
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 #endif /* LISTS_H */
