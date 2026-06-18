@@ -1,3 +1,3 @@
-## Write a function that prints all the elements of a listint_t list.
+# More Singly Linked Lists—Part 2
 
-### Write a function that returns the number of elements in a linked listint_t list.
+## Write a function that returns the sum of all the data (n) of a listint_t linked list.
