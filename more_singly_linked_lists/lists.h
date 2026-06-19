@@ -128,6 +128,14 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index);
  */
 void free_listint2(listint_t **head);
 
+/**
+ * reverse_listint - reverses a listint_t linked list.
+ * @head: pointer to a pointer to the head of the listint_t list.
+ *
+ * Return: pointer to the first node of the reversed listint_t list.
+ */
+listint_t *reverse_listint(listint_t **head);
+
 
 
 #endif /* LISTS_H */
