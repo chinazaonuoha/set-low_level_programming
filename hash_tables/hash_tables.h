@@ -39,5 +39,13 @@ hash_node_t **array;
  */
 hash_table_t *hash_table_create(unsigned long int size);
 
+/**
+ * hash_djb2 - Hash function implementing the djb2 algorithm.
+ * @str: The string to hash.
+ *
+ * Return: The calculated hash.
+ */
+unsigned long int hash_djb2(const unsigned char *str);
+
 
 #endif
