@@ -56,4 +56,11 @@ unsigned long int hash_djb2(const unsigned char *str);
  */
  unsigned long int key_index(const unsigned char *key, unsigned long int size);
 
+ /**
+  * hash_table_set - Adds an element to the hash table.
+  * @ht: The hash table you want to add or update the key/value to.
+  * @key: The key. Cannot be an empty string.
+  * @value: The value associated with the key. Must be duplicated.
+  */
+ int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 #endif
