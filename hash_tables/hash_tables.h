@@ -63,4 +63,11 @@ unsigned long int hash_djb2(const unsigned char *str);
   * @value: The value associated with the key. Must be duplicated.
   */
  int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+
+ /**
+  * hash_table_get - Retrieves a value associated with a key in a hash table.
+  * @ht: A pointer to the hash table instance to look into.
+  * @key: The key string you are searching for.
+  */
+  char *hash_table_get(const hash_table_t *ht, const char *key);
 #endif
