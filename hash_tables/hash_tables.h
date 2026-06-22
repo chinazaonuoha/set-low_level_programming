@@ -70,4 +70,10 @@ unsigned long int hash_djb2(const unsigned char *str);
   * @key: The key string you are searching for.
   */
   char *hash_table_get(const hash_table_t *ht, const char *key);
+
+  /**
+   * hash_table_print - Prints a hash table.
+   * @ht: The hash table.
+   */
+  void hash_table_print(const hash_table_t *ht);
 #endif
