@@ -24,7 +24,7 @@ return (NULL);
 ht->array = calloc(size, sizeof(hash_node_t *));
 if (ht->array == NULL)
 {
-free(ht); 
+free(ht);
 return (NULL);
 }
 
